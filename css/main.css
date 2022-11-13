@@ -525,6 +525,7 @@ a {
   line-height: 1.63;
   color: var(--tittle-text-color);
   background: var(--secondary-background-color);
+  cursor: pointer;
 }
 
 .projects {
