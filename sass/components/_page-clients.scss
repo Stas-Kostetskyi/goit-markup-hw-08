@@ -12,11 +12,11 @@
     
             color: var(--tittle-text-color);
         }
-        &_list {
+    &_list {
             display: flex;
             justify-content: center;
         }
-        &_link {
+    &_link {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,10 +27,10 @@
             border: 1px solid var(--icon-color);
             border-radius: 4px;
         }
-        &_icon {
+    &_icon {
             fill: var(--icon-color);
         }
-        &_item:not(:last-child) {
+    &_item:not(:last-child) {
             margin-right: 30px;
         }
 }

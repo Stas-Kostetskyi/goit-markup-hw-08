@@ -109,7 +109,7 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.form-modal_field:focus-within svg {
+.form-modal_field:focus-within .form-modal_icon {
     fill: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);

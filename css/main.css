@@ -90,14 +90,6 @@ a {
   background-color: var(--basic-white-text);
   border-bottom: 1px solid var(--header-border-color);
 }
-
-.header_page,
-.header_nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .header_list {
   display: flex;
   margin-left: 93px;
@@ -111,6 +103,12 @@ a {
   display: block;
 }
 
+.header_page, .header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .mail-list {
   display: flex;
   align-items: center;
@@ -118,6 +116,21 @@ a {
 }
 .mail-list .mail-list_item + .mail-list_item {
   margin-left: 30px;
+}
+.mail-list_link {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+.mail-list_icon {
+  margin-right: 10px;
+  fill: var(--icon-color);
 }
 
 .header_logo {
@@ -147,23 +160,6 @@ a {
   line-height: 1.14;
 }
 
-.mail-list_link {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--primary-text-color);
-}
-
-.mail-list_icon {
-  margin-right: 10px;
-  fill: var(--icon-color);
-}
-
 .hero {
   max-width: 1600px;
   max-height: 600px;
@@ -186,8 +182,7 @@ a {
   text-transform: uppercase;
 }
 
-.hero_button,
-.order {
+.hero_button, .order {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,8 +776,9 @@ a {
   transition-timing-function: var(--transition-timing-function);
 }
 
-.hero_button:hover,
-.hero_button:focus {
+.hero_button:hover, .order:hover,
+.hero_button:focus,
+.order:focus {
   color: var(--basic-white-text);
   background-color: var(--btn-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -872,7 +868,7 @@ a {
   transition-timing-function: var(--transition-timing-function);
 }
 
-.form-modal_field:focus-within svg {
+.form-modal_field:focus-within .form-modal_icon {
   fill: var(--accent-color);
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
