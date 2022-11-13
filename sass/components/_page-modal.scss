@@ -1,0 +1,46 @@
+.beckdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    background: var(--backdrop);
+
+    opacity: 1;
+
+    transition: opacity 250ms var(--transition-timing-function),
+        visibility 250ms var(--transition-timing-function);
+    &.is-hidden .modal {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        &.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--transition-timing-function);
+    width: 528px;
+    height: 581px;
+
+    padding: 40px;
+
+    background: var(--basic-white-text);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &_close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+}
+

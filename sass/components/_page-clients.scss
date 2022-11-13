@@ -1,0 +1,45 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &_tittle {
+            margin-bottom: 50px;
+    
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            color: var(--tittle-text-color);
+        }
+        &_list {
+            display: flex;
+            justify-content: center;
+        }
+        &_link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            width: 170px;
+            height: 92px;
+        
+            border: 1px solid var(--icon-color);
+            border-radius: 4px;
+        }
+        &_icon {
+            fill: var(--icon-color);
+        }
+        &_item:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+
+
+
+
+
+
+
+

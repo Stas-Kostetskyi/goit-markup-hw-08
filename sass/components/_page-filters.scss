@@ -1,0 +1,33 @@
+.filters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &_list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    &_list .filters_item +.filters_item {
+            margin-left: 8px;
+        }
+    &_button {
+            display: inline-block;
+            border-radius: 4px;
+            padding: 6px 22px;
+            text-align: center;
+            border: 1px solid transparent;
+        
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.63;
+        
+            color: var(--tittle-text-color);
+            background: var(--secondary-background-color);
+        }
+
+}
+
+
+
+
+

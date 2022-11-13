@@ -1,0 +1,162 @@
+.header_link:focus,
+.address-mail-tel:focus,
+.footer_mail:focus,
+.mail-list_link:focus {
+    color: var(--accent-color);
+    outline: none;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+.header_link:hover,
+.address-mail-tel:hover,
+.footer_mail:hover,
+.mail-list_link:hover {
+    color: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+.hero_button:hover,
+.hero_button:focus {
+    color: var(--basic-white-text);
+    background-color: var(--btn-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+.filters_button:hover,
+.filters_button:focus {
+    color: var(--basic-white-text);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: none;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.projects_item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.filters_button:active {
+    color: var(--logo-second-color);
+}
+
+.network-list_link:hover,
+.network-list_link:focus {
+    background-color: var(--accent-color);
+    fill: var(--basic-white-text);
+    outline: none;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+.clients_link:focus,
+.clients_link:hover {
+    border: 1px solid var(--accent-color);
+    outline: none;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+ .clients_icon {
+     .clients_link:hover &
+    {fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);}
+}
+
+ .clients_icon {
+    .clients_link:focus &{
+    fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);}
+}
+
+ .mail-list_icon {
+    .mail-list_link:hover &{
+    fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);}
+}
+
+ .mail-list_icon {
+    .mail-list_link:focus &{
+    fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);}
+}
+ 
+ .projects_overlay {
+    .projects_link:focus &,
+    .projects_link:hover &{
+    transform: translateX(0);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);}
+}
+
+.modal_close:focus,
+.modal_close:hover {
+    fill: var(--accent-color);
+}
+.checkbox_field:focus-within .checkbox_checkmark,
+.form-modal_field:focus-within textarea,
+.form-modal_field:focus-within input {
+    border-color: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+.form-modal_field:focus-within svg {
+    fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+.header_link {
+    position: relative;
+    display: block;
+    &.current::after {
+            content: "";
+            position: absolute;
+            left: 0%;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--accent-color);
+        }
+}
+
+.features_item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-background-color);
+
+    border-radius: 4px;
+}
+
+.features{
+    &--icon-antena::before {
+    background-image: url(../../images/antenna.svg);
+}
+
+    &--icon-clock::before {
+    background-image: url(../../images/clock.svg);
+}
+
+    &--icon-diagramm::before {
+    background-image: url(../../images/diagram.svg);
+}
+
+    &--icon-astronaut::before {
+    background-image: url(../../images/astronaut.svg);
+}
+
+}

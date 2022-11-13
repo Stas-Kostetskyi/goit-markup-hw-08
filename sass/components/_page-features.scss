@@ -1,0 +1,33 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &_list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    &_item {
+        flex-basis: calc((100% - 3 * 30px) / 4);
+        text-align: left;
+    }
+    &_tittle {
+        margin-top: 0;
+        margin-bottom: 10px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--tittle-text-color);
+    }
+    &_undertittle {
+        margin: 0;
+    
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+
