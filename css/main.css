@@ -582,7 +582,7 @@ a {
   padding-right: 24px;
   padding-left: 24px;
   background-color: var(--projects-thumb-overlay);
-  transform: translateY(101%);
+  transform: translateY(102%);
   transition: transform 250ms var(--transition-timing-function);
   font-size: 18px;
   line-height: 1.55;
