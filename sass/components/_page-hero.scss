@@ -12,8 +12,8 @@
     background-image: linear-gradient(to right,
             var(--background-gradient-hero),
             var(--background-gradient-hero)),
-        url(../../images/hero.jpg);
-    &_tittle {
+        url(../images/hero.jpg);
+    &__tittle {
             margin-top: 0px;
             margin-bottom: 30px;
     
@@ -26,7 +26,7 @@
         }
 }
 
-.hero_button{
+.hero__button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,5 +48,5 @@
     cursor: pointer;
 }
 .order {
-    @extend .hero_button;
+    @extend .hero__button;
 }

@@ -1,16 +1,16 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-    &_list {
+    &__list {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
         }
-    &_item {
+    &__item {
         flex-basis: calc((100% - 3 * 30px) / 4);
         text-align: left;
     }
-    &_tittle {
+    &__tittle {
         margin-top: 0;
         margin-bottom: 10px;
     
@@ -22,7 +22,7 @@
     
         color: var(--tittle-text-color);
     }
-    &_undertittle {
+    &__undertittle {
         margin: 0;
     
         font-size: 14px;

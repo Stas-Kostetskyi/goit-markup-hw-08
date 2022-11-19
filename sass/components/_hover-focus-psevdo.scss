@@ -1,22 +1,22 @@
-.header_link:focus,
+.header__link:focus,
 .address-mail-tel:focus,
-.footer_mail:focus,
-.mail-list_link:focus {
+.footer__mail:focus,
+.mail-list__link:focus {
     color: var(--accent-color);
     outline: none;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.header_link:hover,
+.header__link:hover,
 .address-mail-tel:hover,
-.footer_mail:hover,
-.mail-list_link:hover {
+.footer__mail:hover,
+.mail-list__link:hover {
     color: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.hero_button:hover,
-.hero_button:focus {
+.hero__button:hover,
+.hero__button:focus {
     color: var(--basic-white-text);
     background-color: var(--btn-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -25,8 +25,8 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.filters_button:hover,
-.filters_button:focus {
+.filters__button:hover,
+.filters__button:focus {
     color: var(--basic-white-text);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -36,85 +36,86 @@
     transition-timing-function: var(--transition-timing-function);
 }
 
-.projects_item:hover {
+.projects__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
 
-.filters_button:active {
+.filters__button:active {
     color: var(--logo-second-color);
 }
 
-.network-list_link:hover,
-.network-list_link:focus {
+.network-list__link:hover,
+.network-list__link:focus {
     background-color: var(--accent-color);
     fill: var(--basic-white-text);
     outline: none;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.clients_link:focus,
-.clients_link:hover {
+.clients__link:focus,
+.clients__link:hover {
     border: 1px solid var(--accent-color);
     outline: none;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
- .clients_icon {
-     .clients_link:hover &
+ .clients__icon {
+     .clients__link:hover &
     {fill: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);}
+    
 }
 
- .clients_icon {
-    .clients_link:focus &{
+ .clients__icon {
+    .clients__link:focus &{
     fill: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);}
 }
 
- .mail-list_icon {
-    .mail-list_link:hover &{
+ .mail-list__icon {
+    .mail-list__link:hover &{
     fill: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);}
 }
 
- .mail-list_icon {
-    .mail-list_link:focus &{
+ .mail-list__icon {
+    .mail-list__link:focus &{
     fill: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);}
 }
  
- .projects_overlay {
-    .projects_link:focus &,
-    .projects_link:hover &{
+ .projects__overlay {
+    .projects__link:focus &,
+    .projects__link:hover &{
     transform: translateX(0);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);}
 }
 
-.modal_close:focus,
-.modal_close:hover {
+.modal__close:focus,
+.modal__close:hover {
     fill: var(--accent-color);
 }
-.checkbox_field:focus-within .checkbox_checkmark,
-.form-modal_field:focus-within textarea,
-.form-modal_field:focus-within input {
+.checkbox__field:focus-within .checkbox__checkmark,
+.form-modal__field:focus-within textarea,
+.form-modal__field:focus-within input {
     border-color: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.form-modal_field:focus-within .form-modal_icon {
+.form-modal__field:focus-within .form-modal__icon {
     fill: var(--accent-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-.header_link {
+.header__link {
     position: relative;
     display: block;
     &.current::after {
@@ -129,7 +130,7 @@
         }
 }
 
-.features_item::before {
+.features__item::before {
     content: "";
     display: block;
     height: 120px;
@@ -144,19 +145,19 @@
 
 .features{
     &--icon-antena::before {
-    background-image: url(../../images/antenna.svg);
+    background-image: url(../images/antenna.svg);
 }
 
     &--icon-clock::before {
-    background-image: url(../../images/clock.svg);
+    background-image: url(../images/clock.svg);
 }
 
     &--icon-diagramm::before {
-    background-image: url(../../images/diagram.svg);
+    background-image: url(../images/diagram.svg);
 }
 
     &--icon-astronaut::before {
-    background-image: url(../../images/astronaut.svg);
+    background-image: url(../images/astronaut.svg);
 }
 
 }

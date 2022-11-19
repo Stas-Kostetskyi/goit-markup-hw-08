@@ -1,7 +1,7 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    &_tittle {
+    &__tittle {
             margin-bottom: 50px;
     
             font-weight: 700;
@@ -12,11 +12,11 @@
     
             color: var(--tittle-text-color);
         }
-    &_list {
+    &__list {
             display: flex;
             justify-content: center;
         }
-    &_link {
+    &__link {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,10 +27,10 @@
             border: 1px solid var(--icon-color);
             border-radius: 4px;
         }
-    &_icon {
+    &__icon {
             fill: var(--icon-color);
         }
-    &_item:not(:last-child) {
+    &__item:not(:last-child) {
             margin-right: 30px;
         }
 }

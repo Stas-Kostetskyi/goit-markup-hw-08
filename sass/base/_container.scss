@@ -1,7 +1,30 @@
+// .container {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
+//     text-align: center;
+// }
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+@media screen and (min-width: $mobile) {
+    .container {
+        max-width: $mobile;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .container {
+        max-width: $tablet;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .container {
+        max-width: $desktop;
+    }
 }

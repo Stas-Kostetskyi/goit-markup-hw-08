@@ -1,6 +1,6 @@
 .work {
     padding-bottom: 94px;
-    & .work_uppertittle{
+    & .work__uppertittle{
         font-weight: 700;
             font-size: 36px;
             line-height: 1.17;
@@ -8,23 +8,23 @@
         
             color: var(--tittle-text-color);
     }
-    & .work_uppertittle {
+    & .work__uppertittle {
         margin-top: 0;
         margin-bottom: 50px;
     }
-    &_item {
+    &__item {
         flex-basis: calc((100% - 2 * 30px) / 3);
     }
-    &_list {
+    &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
     }
-    &_item {
+    &__item {
         position: relative;
         display: block;
     }
-    &_tittle {
+    &__tittle {
         position: absolute;
         display: flex;
         align-items: center;
@@ -45,7 +45,7 @@
         background-color: var(--applications-background);
         color: var(--basic-white-text);
     }
-    &_icon {
+    &__icon {
         display: block;
     
     }

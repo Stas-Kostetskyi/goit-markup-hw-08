@@ -1,15 +1,15 @@
 .filters {
     padding-top: 94px;
     padding-bottom: 94px;
-    &_list {
+    &__list {
             display: flex;
             justify-content: center;
             margin-bottom: 50px;
         }
-    &_list .filters_item +.filters_item {
+    &__list .filters__item +.filters__item {
             margin-left: 8px;
         }
-    &_button {
+    &__button {
             display: inline-block;
             border-radius: 4px;
             padding: 6px 22px;
