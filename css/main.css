@@ -77,16 +77,9 @@ a {
   margin: 0 auto;
   text-align: center;
 }
-
-.container {
-  width: 100%;
-  padding: 0 15px;
-}
-
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -99,6 +92,12 @@ a {
     max-width: 1200px;
   }
 }
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,6 +263,9 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .features__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
@@ -343,6 +345,11 @@ a {
 .work__icon {
   display: block;
 }
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 
 .team {
   padding-top: 94px;
@@ -358,6 +365,11 @@ a {
   margin-top: 0;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .team .team__uppertittle {
+    margin-bottom: 30px;
+  }
+}
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +377,9 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team-social {
   display: -webkit-box;
@@ -374,6 +389,11 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+  }
 }
 
 .team__item {
@@ -1087,11 +1107,32 @@ a {
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .features__item::before {
+    padding: 25px 192px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item::before {
+    max-width: 1199px;
+    padding: 25px 144px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item::before {
+    padding: 25px 102px;
+  }
 }
 
 .features--icon-antena::before {

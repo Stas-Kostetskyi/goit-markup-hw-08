@@ -135,12 +135,28 @@
     display: block;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
+
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--secondary-background-color);
 
     border-radius: 4px;
+    @media screen and (max-width: 767px) {
+        padding: 25px 192px;   
+    
+    }
+        @media screen and (min-width: $tablet) {
+            max-width: 1199px;
+            padding: 25px 144px;
+            display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+        }
+                @media screen and (min-width: $desktop) {
+                    padding: 25px 102px;
+                    
+                }
+
 }
 
 .features{
