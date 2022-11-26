@@ -22,7 +22,9 @@
 
 .container.footer__page {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__logo {
