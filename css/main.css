@@ -1288,7 +1288,6 @@ a {
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -1298,7 +1297,12 @@ a {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: #2196F3;
+}
+
+.menu-toggle__close:hover,
+.menu-toggle__close:focus {
+  fill: #2196F3;
 }
 
 .menu-container {
@@ -1308,7 +1312,7 @@ a {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: var(--color-form-input);
+  background-color: var(--basic-white-text);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1336,9 +1340,100 @@ a {
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu .mobile-menu__link {
   display: block;
-  padding: 10px;
-  color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-menu__link {
+  margin-bottom: 32px;
+}
+
+.mobile-menu:last-child {
+  margin-bottom: 306px;
+}
+
+.mobile-menu__list {
+  margin-top: 306px;
+}
+
+.mobile-menu--tel {
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.mobile-menu__item:last-child {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.mobile-menu--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-menu__network {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-menu__networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.mobile-menu--inst::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  left: 125px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mobile-menu--twit:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  left: 204px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mobile-menu--face:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  left: 305 px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
