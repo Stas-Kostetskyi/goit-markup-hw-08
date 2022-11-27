@@ -149,15 +149,32 @@ a {
 .mail-list {
   display: none;
 }
+@media screen and (max-width: 1199px) {
+  .mail-list {
+    margin-top: 21px;
+  }
+}
 @media screen and (min-width: 768px) {
   .mail-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mail-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .mail-list .mail-list__item + .mail-list__item {
@@ -184,6 +201,19 @@ a {
 .mail-list__icon {
   margin-right: 10px;
   fill: var(--icon-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .mail-list__link {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mail-list .mail-list__item + .mail-list__item {
+    margin-left: 0;
+  }
 }
 
 .header__logo {
@@ -1306,7 +1336,7 @@ a {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--basic-white-text);
 }
 
 .mobile-menu {
@@ -1322,7 +1352,7 @@ a {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--tittle-text-color);
 }
 
 .mobile-menu__link:hover {
@@ -1355,7 +1385,7 @@ a {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .mobile-menu__network {
@@ -1384,7 +1414,7 @@ a {
   width: 22px;
   height: 0px;
   top: 731px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--form-border);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }

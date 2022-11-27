@@ -75,7 +75,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--basic-white-text);
 }
 
 .mobile-menu {
@@ -92,7 +92,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--tittle-text-color);
 }
 
 .mobile-menu__link {
@@ -128,7 +128,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .mobile-menu__network {
   font-weight: 500;
@@ -155,7 +155,7 @@
 
   top: 731px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--form-border);
   transform: rotate(90deg);
 }
 .mobile-menu--inst::after {
