@@ -1245,31 +1245,6 @@ a {
   background-image: url(../images/astronaut.svg);
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1297,12 +1272,12 @@ a {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  fill: #2196F3;
+  fill: var(--accent-color);
 }
 
 .menu-toggle__close:hover,
 .menu-toggle__close:focus {
-  fill: #2196F3;
+  fill: var(--accent-color);
 }
 
 .menu-container {
@@ -1350,25 +1325,24 @@ a {
   color: #212121;
 }
 
-.mobile-menu__link {
+.mobile-menu__link:hover {
+  color: var(--accent-color);
+}
+
+.mobile-menu li:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobile-menu:last-child {
+.mobile-menu li:last-child {
   margin-bottom: 306px;
 }
 
-.mobile-menu__list {
-  margin-top: 306px;
-}
-
 .mobile-menu--tel {
-  color: #2196F3;
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
 }
 
 .mobile-menu__item:last-child {
@@ -1389,7 +1363,7 @@ a {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .mobile-menu__networks {
@@ -1402,38 +1376,27 @@ a {
   gap: 20px;
 }
 
+.mobile-menu--inst::after,
+.mobile-menu--twit::after,
+.mobile-menu--face::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  top: 731px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .mobile-menu--inst::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 0px;
   left: 125px;
-  top: 726px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
-.mobile-menu--twit:after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 0px;
+.mobile-menu--twit::after {
   left: 204px;
-  top: 726px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
-.mobile-menu--face:after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 0px;
-  left: 305 px;
-  top: 726px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.mobile-menu--face::after {
+  left: 305px;
 }/*# sourceMappingURL=main.css.map */
