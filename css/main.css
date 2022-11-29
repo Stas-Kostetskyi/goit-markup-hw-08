@@ -70,6 +70,16 @@ a {
   list-style: none;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  color: currentColor;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -228,6 +238,11 @@ a {
   line-height: 1.2;
   color: var(--accent-color);
 }
+@media screen and (max-width: 1199px) {
+  .header__logo--left, .header__logo--right {
+    font-size: 24px;
+  }
+}
 .header__logo--right {
   color: var(--logo-second-color);
 }
@@ -252,6 +267,8 @@ a {
   padding-bottom: 200px;
   background-color: var(--cap-footer-background-color);
   color: var(--basic-white-text);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient-hero)), to(var(--background-gradient-hero))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, var(--background-gradient-hero), var(--background-gradient-hero)), url(../images/hero.jpg);
 }

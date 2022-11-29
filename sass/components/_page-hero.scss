@@ -8,6 +8,9 @@
 
     background-color: var(--cap-footer-background-color);
     color: var(--basic-white-text);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
 
     background-image: linear-gradient(to right,
             var(--background-gradient-hero),
