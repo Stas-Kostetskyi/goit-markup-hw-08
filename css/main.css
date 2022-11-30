@@ -258,6 +258,12 @@ a {
   line-height: 1.14;
 }
 
+@media screen and (max-width: 1199px) {
+  .mail-list__icon {
+    width: 14px;
+  }
+}
+
 .hero {
   max-width: 1600px;
   max-height: 600px;
@@ -964,11 +970,6 @@ a {
 .projects__item,
 .header__link {
   color: var(--tittle-text-color);
-}
-
-.projects__icon {
-  width: 450px;
-  height: 294px;
 }
 
 @media screen and (min-width: 768px) {

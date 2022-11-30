@@ -12,6 +12,7 @@
 
   background-color: var(--basic-white-text);
   border-bottom: 1px solid var(--header-border-color);
+
   &__list {
     display: none;
 
@@ -21,7 +22,7 @@
     }
   }
 
-  & .header__item + .header__item {
+  & .header__item+.header__item {
     margin-left: 50px;
   }
 
@@ -37,34 +38,38 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .header__nav {
   @extend .header__page;
 }
 
 .mail-list {
   display: none;
-  @media screen and (max-width: 1199px){
+
+  @media screen and (max-width: 1199px) {
     margin-top: 21px;
-    
+
   }
-  
+
 
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: auto;
-    
-  }
-    @media screen and (min-width: $desktop){
-      flex-direction: row;
-    }
 
-  & .mail-list__item + .mail-list__item {
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+
+  & .mail-list__item+.mail-list__item {
     margin-left: 30px;
   }
+
   &__link {
-    
+
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -77,27 +82,29 @@
 
     color: var(--primary-text-color);
   }
- 
+
   &__icon {
     margin-right: 10px;
     fill: var(--icon-color);
   }
 }
-.mail-list__link{
+
+.mail-list__link {
   @media screen and (max-width: 1199px) {
-      padding-top: 0px;
-      padding-bottom: 10px;
-    }
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
 
 }
 
 
-.mail-list .mail-list__item + .mail-list__item{
+.mail-list .mail-list__item+.mail-list__item {
   @media screen and (max-width: 1199px) {
-      margin-left: 0;
-    }
+    margin-left: 0;
+  }
 }
-.mail-list__icon{}
+
+
 .header__logo {
   display: inline-block;
   padding-top: 24px;
@@ -111,23 +118,34 @@
     line-height: 1.2;
 
     color: var(--accent-color);
+
     @media screen and (max-width: 1199px) {
-        font-size: 24px;
-      }
+      font-size: 24px;
+    }
   }
-     
+
 
 
   &--right {
     color: var(--logo-second-color);
   }
 }
+
 .header__nav .header__link.current {
   color: var(--accent-color);
 }
+
 .header__link,
 .header__link.current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.mail-list__icon {
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+
+  }
+
 }
