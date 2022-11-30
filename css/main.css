@@ -981,16 +981,12 @@ a {
     width: 370px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .projects__uppertittle--first {
     padding-bottom: 56px;
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 768px) {
-  .projects__uppertittle--first {
-    padding-bottom: 56px;
-  }
-}
+
 .beckdrop {
   position: fixed;
   top: 0;
