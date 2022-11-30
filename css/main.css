@@ -904,6 +904,7 @@ a {
 .projects__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
+  width: 370px;
 }
 .projects__link .projects__icon {
   display: block;
@@ -965,6 +966,31 @@ a {
   color: var(--tittle-text-color);
 }
 
+.projects__icon {
+  width: 450px;
+  height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__icon {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1199px) {
+  .projects__uppertittle--first {
+    padding-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 768px) {
+  .projects__uppertittle--first {
+    padding-bottom: 56px;
+  }
+}
 .beckdrop {
   position: fixed;
   top: 0;
