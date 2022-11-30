@@ -1,34 +1,41 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
+
     &__list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
     &__item {
         flex-basis: calc((100% - 3 * 30px) / 4);
         text-align: left;
     }
+
     &__tittle {
         margin-top: 0;
         margin-bottom: 10px;
-    
+
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    
+
+
         color: var(--tittle-text-color);
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
+
     &__undertittle {
         margin: 0;
-    
+
         font-size: 14px;
         line-height: 1.71;
     }
 }
-
-

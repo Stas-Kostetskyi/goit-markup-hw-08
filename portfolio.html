@@ -14,16 +14,23 @@
 
 <body>
   <!-- Верхня лінія -->
+  <!-- хедер -->
   <header class="header">
     <div class="header__page container">
       <nav class="header__nav">
-        <a class="header__logo" href="./index.html"> <span class="header__logo--left">Web</span><span
-            class="header__logo--right">Studio</span>
+        <a class="header__logo" href="./index.html">
+          <span class="header__logo--left">Web</span><span class="header__logo--right">Studio</span>
         </a>
         <ul class="header__list list">
-          <li class="header__item"><a href="./index.html" class="header__link ">Студія</a></li>
-          <li class="header__item"><a href="./portfolio.html" class="header__link current">Портфоліо</a></li>
-          <li class="header__item"><a href="./index.html" class="header__link">Контакти</a></li>
+          <li class="header__item">
+            <a href="./index.html" class="header__link">Студія</a>
+          </li>
+          <li class="header__item">
+            <a href="./portfolio.html" class="header__link current">Портфоліо</a>
+          </li>
+          <li class="header__item">
+            <a href="./index.html" class="header__link">Контакти</a>
+          </li>
         </ul>
       </nav>
       <ul class="mail-list list">
@@ -33,7 +40,6 @@
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
           </a>
-
         </li>
         <li class="mail-list__item">
           <a class="mail-list__link" href="tel:+380961111111">+38 096 111 11 11
@@ -43,6 +49,11 @@
           </a>
         </li>
       </ul>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <!-- основний блок -->
@@ -51,13 +62,13 @@
     <section class="filters">
       <div class="container">
         <h1 class="visually-hidden">наше портфоліо</h1>
-        <ul class="filters__list list">
+        <!-- <ul class="filters__list list">
           <li class="filters__item"> <button type="button" class="filters__button">Усі</button></li>
           <li class="filters__item"> <button type="button" class="filters__button">Веб-сайти</button></li>
           <li class="filters__item"> <button type="button" class="filters__button">Додатки</button></li>
           <li class="filters__item"> <button type="button" class="filters__button">Дизайн</button></li>
           <li class="filters__item"> <button type="button" class="filters__button">Маркетинг</button></li>
-        </ul>
+        </ul> -->
         <ul class="projects list">
           <li class="projects__item">
             <a class="projects__link" href="">
@@ -205,18 +216,23 @@
   </main>
   <!-- футер -->
   <footer class="footer">
-    <div class="footer__page container ">
+    <div class="footer__page container">
       <div class="footer__address">
-        <a class="footer__logo" href="./index.html"> <span class="footer__logo--left">Web</span><span
-            class="footer__logo--right">Studio</span>
+        <a class="footer__logo" href="./index.html">
+          <span class="footer__logo--left">Web</span><span class="footer__logo--right">Studio</span>
         </a>
         <address>
           <ul class="footer__list list">
-            <li class="footer__item"><a href="https://g.page/luxoptica__lesi__ukrainki?share" target="__blank"
-                rel="noopener noreferrer nofollow" class="address-mail-tel">м. Київ, бульвар Лесі Українки, 24</a></li>
-            <li class="footer__item"><a href="mailto:info@devstudio.com" class="footer__mail">info@devstudio.com</a>
+            <li class="footer__item">
+              <a href="https://g.page/luxoptica__lesi__ukrainki?share" target="__blank"
+                rel="noopener noreferrer nofollow" class="address-mail-tel">м. Київ, бульвар Лесі Українки, 24</a>
             </li>
-            <li class="footer__item"><a href="tel:+380961111111" class="footer__mail">+38 096 111 11 11</a></li>
+            <li class="footer__item">
+              <a href="mailto:info@devstudio.com" class="footer__mail">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+              <a href="tel:+380961111111" class="footer__mail">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -253,9 +269,9 @@
       <div class="footer-subscribe">
         <p class="footer-subscribe__tittle">Підпишіться на розсилку</p>
         <form class="footer-form" name="footer">
-
-          <input class="footer-form__input" type="text" name="name" id="name" placeholder="E-mail" autocomplete="on">
-          <button class="footer-button order" type="submit"><span> Підписатися</span>
+          <input class="footer-form__input" type="text" name="name" id="name" placeholder="E-mail" autocomplete="on" />
+          <button class="footer-button order" type="submit">
+            <span> Підписатися</span>
 
             <svg class="footer-button__icon" width="" height="">
               <use href="./images/icons.svg#icon-send"></use>
@@ -265,6 +281,53 @@
       </div>
     </div>
   </footer>
+
+  <!-- Mobile menu  -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="24" height="24" class="menu-toggle__close">
+        <use href="./images/icons.svg#icon-close_24px"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li>
+        <a href="./index.html" class="mobile-menu__link ">Студія</a>
+      </li>
+      <li>
+        <a href="./portfolio.html" class="mobile-menu__link current">Портфоліо</a>
+      </li>
+      <li><a href="" class="mobile-menu__link">Контакти</a></li>
+    </ul>
+    <ul class="mobile-menu__list list">
+      <li class="mobile-menu__item">
+        <a href="tel:+380961111111" class="mobile-menu--tel">+38 096 111 11 11
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="mailto:info@devstudio.com" class="mobile-menu--mail">info@devstudio.com
+        </a>
+      </li>
+    </ul>
+    <ul class="mobile-menu__networks list">
+      <li>
+        <a class="mobile-menu__network mobile-menu--inst" href="instagram.com">instagram</a>
+      </li>
+      <li>
+        <a class="mobile-menu__network mobile-menu--twit" href="twitter.com">Twitter</a>
+      </li>
+      <li>
+        <a class="mobile-menu__network mobile-menu--face" href="facebook.com">Facebook</a>
+      </li>
+      <li>
+        <a class="mobile-menu__network mobile-menu--lnkd" href="linkedIn.com">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
