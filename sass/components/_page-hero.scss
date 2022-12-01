@@ -20,7 +20,7 @@
     url(../images/hero_img/mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
+  // background-size: 480px 400px;
 
   // mobile-screen-retina
 
@@ -40,7 +40,7 @@
         var(--background-gradient-hero),
         var(--background-gradient-hero)),
       url(../images/hero_img/tab-1x.jpg);
-    background-size: 768px 400px;
+    // background-size: 768px 400px;
 
     // tablet-screen-retina
     @media screen and (min-device-pixel-ratio: 2)and (min-width: 768px),
