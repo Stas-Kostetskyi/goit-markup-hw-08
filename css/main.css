@@ -865,6 +865,7 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  row-gap: 15px;
 }
 @media screen and (max-width: 767px) {
   .filters__list {
@@ -922,7 +923,11 @@ a {
 .projects__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
-  width: 370px;
+}
+@media screen and (max-width: 767px) {
+  .projects__item {
+    width: 450px;
+  }
 }
 .projects__link .projects__icon {
   display: block;
@@ -984,6 +989,11 @@ a {
   color: var(--tittle-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .projects__icon {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .projects__icon {
     width: 354px;
