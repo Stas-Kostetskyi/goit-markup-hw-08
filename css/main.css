@@ -287,6 +287,11 @@ a {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_img/mob-2x.jpg);
   }
 }
+@media screen and (max-width: 380px) {
+  .hero {
+    width: 150vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient-hero)), to(var(--background-gradient-hero))), url(../images/hero_img/tab-1x.jpg);
@@ -1069,8 +1074,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
 }
 .form-modal__tittle {
   display: block;
@@ -1160,6 +1165,7 @@ a {
 
 .form-button {
   width: 200px;
+  height: 50px;
 }
 
 .checkbox {
@@ -1192,12 +1198,30 @@ a {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 16px;
-  height: 15px;
+  height: 16px;
   border: 2px solid var(--tittle-text-color);
   border-radius: 2px;
   background-color: var(--basic-white-text);
   -webkit-transition: opacity 250ms var(--transition-timing-function);
   transition: opacity 250ms var(--transition-timing-function);
+}
+@media screen and (max-width: 506px) {
+  .checkbox__checkmark {
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+  }
+}
+@media screen and (max-width: 496px) {
+  .checkbox__checkmark {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+  }
+}
+@media screen and (max-width: 220px) {
+  .checkbox__checkmark {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
 }
 .checkbox__icon {
   position: absolute;
@@ -1208,6 +1232,24 @@ a {
   border-radius: 2px;
   background-color: var(--btn-hover);
   fill: var(--basic-white-text);
+}
+@media screen and (max-width: 506px) {
+  .checkbox__icon {
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+  }
+}
+@media screen and (max-width: 496px) {
+  .checkbox__icon {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+  }
+}
+@media screen and (max-width: 220px) {
+  .checkbox__icon {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
 }
 .checkbox__input:checked + .checkbox__checkmark {
   opacity: 0;
@@ -1499,8 +1541,8 @@ a {
   padding: 48px 40px;
   background-color: var(--basic-white-text);
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(250%);
+          transform: translateX(250%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;

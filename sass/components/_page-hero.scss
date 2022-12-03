@@ -33,6 +33,10 @@
       url(../images/hero_img/mob-2x.jpg);
   }
 
+  @media screen and (max-width: 380px) {
+    width: 150vw;
+  }
+
   // tablet-screen
 
   @media screen and (min-width: 768px) {
