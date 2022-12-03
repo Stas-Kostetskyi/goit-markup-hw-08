@@ -89,7 +89,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -287,9 +287,9 @@ a {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_img/mob-2x.jpg);
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 340px) {
   .hero {
-    width: 150vw;
+    width: 135vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1198,7 +1198,7 @@ a {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 2px solid var(--tittle-text-color);
   border-radius: 2px;
   background-color: var(--basic-white-text);
@@ -1211,13 +1211,7 @@ a {
             transform: translateY(-120%);
   }
 }
-@media screen and (max-width: 496px) {
-  .checkbox__checkmark {
-    -webkit-transform: translateY(-130%);
-            transform: translateY(-130%);
-  }
-}
-@media screen and (max-width: 220px) {
+@media screen and (max-width: 201px) {
   .checkbox__checkmark {
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
@@ -1229,7 +1223,7 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  border-radius: 2px;
+  border-radius: 1px;
   background-color: var(--btn-hover);
   fill: var(--basic-white-text);
 }
@@ -1239,13 +1233,7 @@ a {
             transform: translateY(-120%);
   }
 }
-@media screen and (max-width: 496px) {
-  .checkbox__icon {
-    -webkit-transform: translateY(-130%);
-            transform: translateY(-130%);
-  }
-}
-@media screen and (max-width: 220px) {
+@media screen and (max-width: 201px) {
   .checkbox__icon {
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
@@ -1541,8 +1529,8 @@ a {
   padding: 48px 40px;
   background-color: var(--basic-white-text);
   z-index: 999;
-  -webkit-transform: translateX(250%);
-          transform: translateX(250%);
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;

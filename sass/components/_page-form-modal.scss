@@ -119,7 +119,7 @@
         z-index: 1;
         transform: translateY(-50%);
         width: 16px;
-        height: 16px;
+        height: 15px;
 
 
         border: 2px solid var(--tittle-text-color);
@@ -132,13 +132,11 @@
             transform: translateY(-120%);
         }
 
-        @media screen and (max-width: 496px) {
-            transform: translateY(-130%);
-        }
-
-        @media screen and (max-width: 220px) {
+        @media screen and (max-width: 201px) {
             transform: translateY(-200%);
         }
+
+
     }
 
     &__icon {
@@ -147,7 +145,7 @@
         top: 50%;
 
         transform: translateY(-50%);
-        border-radius: 2px;
+        border-radius: 1px;
 
         background-color: var(--btn-hover);
         fill: var(--basic-white-text);
@@ -156,14 +154,11 @@
             transform: translateY(-120%);
         }
 
-        @media screen and (max-width: 496px) {
-            transform: translateY(-130%);
-
-        }
-
-        @media screen and (max-width: 220px) {
+        @media screen and (max-width: 201px) {
             transform: translateY(-200%);
         }
+
+
     }
 
     &__input:checked+.checkbox__checkmark {
