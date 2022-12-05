@@ -54,8 +54,8 @@
 }
 
 .menu-container {
-  position: fixed;
-  display: flex;
+  position: absolute;
+  display: none;
   flex-direction: column;
   top: 0;
   left: 0;
@@ -71,6 +71,8 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-container .menu-toggle {

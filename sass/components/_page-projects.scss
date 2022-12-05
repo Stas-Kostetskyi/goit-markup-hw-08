@@ -1,13 +1,40 @@
+.projects .projects__item:not(:last-child) {
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 30px;
+    }
+}
+
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    @media screen and (min-width: $tablet) {
 
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
+        justify-content: flex-start;
+    }
 
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 2 * 30px) / 3);
+    }
 
     &__item {
-        flex-basis: calc((100% - 60px) / 3);
+        @media screen and (min-width: $tablet) {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 30px) / 2);
+
+        }
+
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 2 * 30px) / 3);
+        }
+
+        justify-content: center;
+
+
+
 
 
         @media screen and (max-width: 767px) {
@@ -15,7 +42,7 @@
         }
 
         @media screen and (max-width: 767px) {
-            width: 450px;
+            max-width: 450px;
         }
 
     }
@@ -90,6 +117,10 @@
 .projects__item,
 .header__link {
     color: var(--tittle-text-color);
+}
+.projects__item{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // .projects__icon {

@@ -3,7 +3,7 @@
     flex-direction: column;
 
     width: 100%;
-    height: 100vh;
+
 
     &__tittle {
         display: block;
@@ -132,8 +132,12 @@
             transform: translateY(-120%);
         }
 
-        @media screen and (max-width: 220px) {
+        @media screen and (max-width: 302px) {
             transform: translateY(-200%);
+        }
+
+        @media screen and (max-width: 228px) {
+            transform: translateY(-300%);
         }
 
 
@@ -154,8 +158,12 @@
             transform: translateY(-120%);
         }
 
-        @media screen and (max-width: 220px) {
+        @media screen and (max-width: 302px) {
             transform: translateY(-200%);
+        }
+
+        @media screen and (max-width: 228px) {
+            transform: translateY(-300%);
         }
 
 
