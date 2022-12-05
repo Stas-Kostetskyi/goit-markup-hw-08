@@ -980,6 +980,8 @@ a {
 }
 .projects__link .projects__icon {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .projects__uppertittle .projects__tittle {
   margin-top: 0;

@@ -49,6 +49,8 @@
 
     &__link .projects__icon {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     &__uppertittle .projects__tittle {
@@ -118,7 +120,8 @@
 .header__link {
     color: var(--tittle-text-color);
 }
-.projects__item{
+
+.projects__item {
     margin-left: auto;
     margin-right: auto;
 }
