@@ -47,9 +47,7 @@
 
     }
 
-    &__link .projects__icon {
-        display: block;
-    }
+    
 
     &__uppertittle .projects__tittle {
         margin-top: 0;
@@ -118,17 +116,12 @@
 .header__link {
     color: var(--tittle-text-color);
 }
-.projects__item{
+
+.projects__item {
     margin-left: auto;
     margin-right: auto;
 }
 
-// .projects__icon {
-//     width: 450px;
-//     height: 294px;
-//     background-size: cover;
-
-// }
 
 @media screen and (max-width: 767px) {
     .projects__icon {
